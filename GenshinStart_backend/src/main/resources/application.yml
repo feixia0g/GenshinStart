@@ -1,0 +1,14 @@
+server:
+  port: 8000
+  undertow:
+    io-threads: 16
+    worker-threads: 4000
+    buffer-size: 1024
+    direct-buffers: true
+  compression:
+    enabled: true
+    min-response-size: 1
+
+  #runningtime environment
+  profiles:
+    active:  dev
