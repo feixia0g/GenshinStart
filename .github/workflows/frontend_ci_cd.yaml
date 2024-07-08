@@ -1,0 +1,31 @@
+name: Frontend CI/CD
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  frontend:
+    name: Frontend CI AND CD
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14" # 根据你的前端所需的Node版本
+
+      - name: Install frontend dependencies
+        run: |
+          cd GenshinStart_frontend
+          npm install
+
+      - name: Run ESLint
+        run: |
+          cd GenshinStart_frontend
+          npx eslint . --ext .js,.jsx,.ts,.tsx
