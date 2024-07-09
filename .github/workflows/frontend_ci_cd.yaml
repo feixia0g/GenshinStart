@@ -22,7 +22,7 @@ jobs:
 
       - name: Install frontend dependencies
         run: |
-          cd GenshinStart_frontend
+          cd GenshinStart_frontend/vue/student
           npm install
 
       - name: Run ESLint
