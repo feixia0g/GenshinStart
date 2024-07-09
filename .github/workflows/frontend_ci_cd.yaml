@@ -27,5 +27,5 @@ jobs:
 
       - name: Run ESLint
         run: |
-          cd GenshinStart_frontend
+          cd GenshinStart_frontend/vue/student
           npx eslint . --ext .js,.jsx,.ts,.tsx
