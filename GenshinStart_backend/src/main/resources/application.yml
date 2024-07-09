@@ -9,6 +9,25 @@ server:
     enabled: true
     min-response-size: 1
 
+#mybatis
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    log-prefix: repository.
+
+#mybatis page helper
+pagehelper:
+  autoDialect: true
+  closeConn: true
+  reasonable: true
+
+#mybatis datasource default HikariPool
+spring:
+  datasource:
+    hikari:
+      idle-timeout: 600000  #10 min
+      max-lifetime: 1800000 #30 min
+
   #runningtime environment
   profiles:
     active:  dev
