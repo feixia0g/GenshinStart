@@ -1,27 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo2.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <router-view />
+    <back-to-top
+      :visibility-height="100"
+      :back-position="0"
+      transition-name="fade"
+      ref="backTop"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BackToTop from '@/components/BackToTop'
+
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BackToTop
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
