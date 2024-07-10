@@ -124,6 +124,21 @@
             <version>3.9</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.qiniu</groupId>
+            <artifactId>qiniu-java-sdk</artifactId>
+            <version>7.2.25</version>
+        </dependency>
+
+        <!-- hot debug -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>${spring.boot.version}</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 
     <build>
