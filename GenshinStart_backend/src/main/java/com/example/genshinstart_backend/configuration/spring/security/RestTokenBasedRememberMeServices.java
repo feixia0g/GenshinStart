@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * @version 3.5.0
  * @description: 记住我，Cookie
- * Copyright (C), 2020-2024, 武汉思维跳跃科技有限公司
+ * @author feixia0g
  * @date 2024/7/10 9:50
  */
 public class RestTokenBasedRememberMeServices extends TokenBasedRememberMeServices {
