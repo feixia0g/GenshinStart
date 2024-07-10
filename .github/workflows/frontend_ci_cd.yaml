@@ -25,7 +25,12 @@ jobs:
           cd GenshinStart_frontend/vue/student
           npm install
 
-      - name: Run ESLint
+      - name: Student End Run ESLint
         run: |
           cd GenshinStart_frontend/vue/student
+          npm run lint
+
+      - name: Admin End Run ESLint
+        run: |
+          cd GenshinStart_frontend/vue/admin
           npm run lint
