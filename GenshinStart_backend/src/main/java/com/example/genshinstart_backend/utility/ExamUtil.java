@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 
 /**
- * @version 3.5.0
+ * @version 1.0.0
  * @description: The type Exam util.
  * @author feixia0g
  * @date 2024/7/10 21:00
