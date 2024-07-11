@@ -1,4 +1,4 @@
-package com.example.genshinstart_backend.viewmodel.user;
+package com.example.genshinstart_backend.viewmodel.wx.student.user;
 
 
 import javax.validation.constraints.NotBlank;
