@@ -20,12 +20,22 @@ jobs:
         with:
           node-version: "14" # 根据你的前端所需的Node版本
 
-      - name: Install frontend dependencies
+      - name: Install student frontend dependencies
         run: |
-          cd GenshinStart_frontend
+          cd GenshinStart_frontend/vue/student
           npm install
 
-      - name: Run ESLint
+      - name: Install admin frontend dependencies
         run: |
-          cd GenshinStart_frontend
-          npx eslint . --ext .js,.jsx,.ts,.tsx
+          cd GenshinStart_frontend/vue/admin
+          npm install
+
+      - name: Student End Run ESLint
+        run: |
+          cd GenshinStart_frontend/vue/student
+          npm run lint
+
+      - name: Admin End Run ESLint
+        run: |
+          cd GenshinStart_frontend/vue/admin
+          npm run lint
