@@ -15,6 +15,7 @@ public class SystemConfig {
 
     private PasswordKeyConfig pwdKey;
     private List<String> securityIgnoreUrls;
+    private WxConfig wx;
     private QnConfig qn;
 
     /**
@@ -51,6 +52,24 @@ public class SystemConfig {
      */
     public void setSecurityIgnoreUrls(List<String> securityIgnoreUrls) {
         this.securityIgnoreUrls = securityIgnoreUrls;
+    }
+
+    /**
+     * Gets wx.
+     *
+     * @return the wx
+     */
+    public WxConfig getWx() {
+        return wx;
+    }
+
+    /**
+     * Sets wx.
+     *
+     * @param wx the wx
+     */
+    public void setWx(WxConfig wx) {
+        this.wx = wx;
     }
 
     /**
